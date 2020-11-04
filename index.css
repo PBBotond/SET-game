@@ -1,0 +1,131 @@
+div{
+    font-family: Georgia, serif;
+}
+
+.hidden{
+    display: none;
+}
+body {
+    background-color: lightblue;
+    
+}
+#menu div{
+   text-align: center;
+   border-radius: 25px;
+   background-color: lightseagreen;
+}
+#menu{
+    margin-top: 20%;
+    padding: 0% 30% 0% 30%;
+}
+
+#menu ul{
+    list-style-type:none;
+   
+}
+#menu ul li{
+    font-size: 2em;
+    margin-right: 2%;
+}
+#startb{
+   width: auto;
+   font-size: 2em;
+}
+#menu table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+#extra td{
+    font-size: 1em;
+}
+#menu table #gmodes td{
+    font-size: 2em;
+
+}
+#menu table #nop td{
+    font-size: 2em;
+
+}
+#gametable img{
+    transform: rotate(90deg);
+    width: 50%;
+    margin-top: -28%;
+}
+#gametable{
+    display: inline-table;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+    margin-bottom: -1%;
+}
+#leftSpace,#rightSpace{
+    width: 19%;
+    vertical-align: top;
+    margin-top: 5%;
+}
+#leftSpace{
+    display: inline-block;
+}
+#rightSpace{
+    display: inline-block;
+}
+#rightSpace table{
+    margin-left: auto;
+    column-span: 10%;
+}
+#rightSpace table td, #leftSpace table td{
+    padding-bottom: 50%;
+}
+#rightSpace label,#leftSpace label{
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+}
+#timer{
+    display: block;
+    text-align: right;
+    font-size: 2em;
+    margin-right: 10%;
+    color: red;
+    visibility: hidden;
+}
+#gametable img:hover{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(13, 57, 201, 0.67);
+-moz-box-shadow:    0px 0px 30px 0px rgba(13, 57, 201, 0.67);
+box-shadow:         0px 0px 30px 0px rgba(13, 57, 201, 0.67);
+}
+.selectedCard{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(13, 57, 201, 0.67);
+-moz-box-shadow:    0px 0px 30px 0px rgba(13, 57, 201, 0.67);
+box-shadow:         0px 0px 30px 0px rgba(13, 57, 201, 0.67);
+}
+.disqualified{
+    color: red;
+}
+#infoLine table td{
+    border: 1px solid black;
+    text-align: center;
+}
+#infoLine table ,#scoreList table{
+    column-span: 10%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+#scoreList table td{
+    text-align: center;
+}
+.selectedPlayer{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 10px rgba(29, 100, 33, 0.808);
+-moz-box-shadow:    0px 0px 30px 10px rgba(29, 100, 33, 0.808);
+box-shadow:         0px 0px 30px 10px rgba(29, 100, 33, 0.808);  
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetMaker</title>
+</head>
+<body>
+    <div id="menu">
+        <div>
+            <h1>SetMaker</h1>
+            <ul>
+                <li id="gamerules">Játékszabályok</li>
+                <li id="numOfPlayes" >Játékosok száma</li>
+                <table cellspacing="10">
+                    <tr id="nop">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+                <li id="gameMode">Játékmód</li>
+                <table cellspacing="10" >
+                    <tr id="gmodes">
+                        <td id="practice">Gyakorló</td>
+                        <td id="normal">Verseny</td>
+                    </tr>
+                </table>
+                <li id="options">Beállítások</li>
+                <table>
+                    <tr id="extra">
+                        <td>
+                            SET létezését mutató gomb <br>
+                            <input type="checkbox" id="show">
+                        </td>
+                        <td>
+                            Segítség kérő gomb <br>
+                            <input type="checkbox" id="hint">
+                        </td>
+                        <td>
+                            +3 lap automatikus(igen) vagy manuális(nem) <br>
+                            <input type="checkbox" id="auto">
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+            <button id="startb">Start</button>
+        </div>
+        <table id="playername">
+
+        </table>
+    </div>
+    <div id="game">
+        <button id="back">Vissza</button>
+        <label id="timer">0</label>
+        <div id="leftSpace">
+            <table>
+
+            </table>
+        </div>
+        <table id="gametable" >
+        
+        </table>
+        <div id="rightSpace">
+            <table>
+
+            </table>
+        </div>
+        <div id="infoLine">
+            <table>
+                
+            </table>
+        </div>
+        <div id="scoreList">
+            <table>
+                
+            </table>
+        </div>
+    </div>
+    <div id="rules">
+        <button id="back">Vissza</button>
+        <h1>JÁTÉKSZABÁLY</h1>
+<p>A játék célja hogy 3 kártyából álló SET-eket
+    találjunk meg az asztalra lehelyezett 12 kártyából.
+    Minden kártyának 4 tulajdonsága van, amik a következők:</p>
+<li>
+    <ul>FORMA: ovális, hullámos, rombusz</ul>
+    <ul>SZÍN: piros, zöld, lila</ul>
+    <ul>SZÁM: 1, 2 vagy 3 forma</ul>
+    <ul>TARTALOM: tömör, csíkos, üres</ul>
+</li>
+    
+<p1>Egy SET 3 kártyából áll, amiben minden jellemzőt külön
+    megvizsgálva, azoknak vagy azonosnak vagy minden
+    kártyán különbözőnek kell lennie. Ennek a szabálynak
+    MINDEN tulajdonság esetében meg kell felelnie a
+    kiválasztott három lapnak. Más szavakkal: a forma vagy
+    azononos mindhárom kártyán, vagy mindegyiken más; a
+    szín vagy azonos mindhárom kártyán, vagy mindegyiken
+    különböző, stb... A könnyebb megértésért a példák között jó
+    és hibás SET-eket is bemutatunk.</p1>
+<h1>GYORS ELLENŐRZÉS</h1> – A kiválasztott három lap SET?
+<p>Ha a lapokon egy tulajdonságot vizsgálva 2 azonos és 1
+    különböző típus látható, akkor az nem SET. Például, ha 2
+    lap piros, 1 pedig lila, akkor az nem SET. Egy SET esetében
+    vagy mindhárom kártyán azonos az adott tulajdonság, vagy
+    laponként különböző.</p>
+<h1>KEZDŐ JÁTSZMA</h1>
+<p>Gyors ismerkedésként, bemelegítésként kezdjük kisebb
+    paklival (csak a tömör formákkal). Ezáltal egy tulajdonságot
+    kizárunk, a tartalmat. Amikor már könnyedén kiválasztjuk
+    ebből a pakliból a SET-eket, akkor keverjük hozzá a
+    2 3
+    pakli többi lapját is és játszunk a teljes játékot, mind a 4
+    tulajdonsággal.</p>
+
+    <h1>A JÁTÉK</h1>
+<p>Az osztó összekeveri a kártyákat és 12 lapot képpel
+    felfelé téglalap formában lehelyez az asztalra, úgy hogy
+    mindenki jól lássa őket. A játékosok bármelyik felfedett
+    kártyát levehetik, ha az SET-et képez. Minden alkalommal,
+    amikor valaki SET-et talál, akkor a kiválasztott három lapot
+    ellenőrzi a többi játékos is. Ha valóban SET, akkor a játékos
+    megkapja a 3 lapot, amely 1 pontot ér, az osztó pedig 3
+    újabb lapot oszt a felvettek helyére. Mielőtt felvennénk a
+    kártyákat, SET-et kell bemondanunk.</p>
+<p>Hogyan is zajlik a játék: Nincsenek körök, az első játékos,
+    aki SET-et kiált, veszi át az irányítást. Miután SETet mondott, senki más nem vehet le kártyákat, csak ő,
+    egész addig amíg a megtalált SET lapjait fel nem veszi.
+    A SET-et a bemondást követő pár másodpercen belül
+    azonnal fel kell venni. Ha a bemondónak mégsincs SETje, vagy a kiválasztott SET hibás, akkor veszít 1 pontot
+    és a hibásan felvett kártyák visszakerülnek a helyükre.
+    Amennyiben a kivett lapok valóban SET-et alkotnak,
+    akkor a SET levétele után újabb lapokkal egészítjük
+    ki 12-re a felcsapott lapokat. Ezután minden játékos
+    azonnal keresi az új SET-eket a felcsapott lapok között.
+    Speciális eset: Ha mindenki egyetért, hogy nincs már levehető
+    SET a fent lévő 12 lapban, akkor 3 plusz lap kerül az asztalra.
+    Amennyiben a 15 lapban sikerül SET-et találni, akkor nem
+    kerül pótlásra a 3 lap, ezáltal újra 12 lap lesz lent az asztalon.
+    Megjegyzés: egy 12 lapos leosztásban 33 az 1-hez az esélye,
+    hogy van benne SET, egy 15 laposban pedig 2500 az 1-hez.
+    A játék addig tart, amíg elfogy a pakli, és az asztalon lévő
+    lapokból már nem lehet SET-et létrehozni. A játék végén
+    2 3
+    előfordulhat, hogy maradnak lapok az asztalon, melyekből
+    már nem lehet SET-et létrehozni. Ekkor megszámoljuk,
+    kinek hány SET-je van. Minden SET 1 pontot ér. A legtöbb
+    pontot (SET-et) gyűjtő játékos nyer. Ha hosszabb játékot
+    szeretnénk, akkor miután pontoztunk, az osztó szerepet
+    óramutató járásnak megfelelően tovább adjuk és egész
+    addig játszunk, míg mindegyik játékosra rákerül az osztó
+    szerep. A játékos a legnagyobb összesített pontszámmal,
+    nyer.</p>
+<p>Egyszemélyes játékmód: Kezdetnek ugyanúgy 12 lapot
+    csapunk fel, mint több játékos esetén. Minden megtalált
+    SET egy pontot ér. Ha nem találunk SET-et, akkor 3 új
+    lapot teszünk ki, de egy SET értékét levonunk a végső
+    pontszámból. Hogy megnyerjük a játékot, az utolsó 12
+    lapban is kell SET-et találnunk.</p>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
