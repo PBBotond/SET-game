@@ -1,2 +1,2 @@
 # SET-game
-The SET cardgame in html
+The SET cardgame in html & js
